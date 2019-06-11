@@ -1,0 +1,22 @@
+body {
+    background: #004BA8;
+}
+
+.my-navbar {
+    background: white;
+}
+
+.sq-btn {
+    width: 50px;
+    height: 50px;
+}
+
+.market-button {
+    height: 50px;
+}
+
+.my-card {
+    width: 18rem;
+    border-color: #FFE066;
+    box-shadow: 5px 5px 10px;
+}
