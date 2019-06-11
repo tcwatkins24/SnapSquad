@@ -13,15 +13,16 @@
 </head>
 
 <body>
+    
     <div id="center-box">
 
         <h1 style="color:azure">Login to SnapSquad</h1>
 
-        <form th:action="@{/login}" method="post">
+        <form >
             <div class="align-left">
                 <h3 class="text" style="color:azure">Username</h3>
                 <label>
-                    <input style=" color: azure" name="usernmae">
+                    <input class="form-control" style=" color: azure" name="usernmae">
                 </label>
             </div>
             <div class="align-left">
@@ -31,7 +32,8 @@
                 </label>
             </div>
             <div id="sign-margin">
-                <input id="signUp" type="submit" value="Sign In">
+                <a routerLink="createEvent" id="signUp" type="submit" value="Sign In">Sign in</a>
+                
             </div>
         </form>
 
@@ -48,7 +50,7 @@
         </div>
 
     </div>
-
+    
 </body>
 
 </html>
