@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {CreateEventComponent} from './create-event/create-event.component'
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path: "createEvent", component: CreateEventComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
