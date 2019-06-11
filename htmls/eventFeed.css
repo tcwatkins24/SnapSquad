@@ -20,3 +20,7 @@ body {
     border-color: #FFE066;
     box-shadow: 5px 5px 10px;
 }
+
+.nav-button {
+    width: 32%;
+}
