@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Login</title>
+
+</head>
+
+<body>
+    <div id="center-box">
+
+        <h1 style="color:azure">Login to SnapSquad</h1>
+
+        <form th:action="@{/login}" method="post">
+            <div class="align-left">
+                <h3 class="text" style="color:azure">Username</h3>
+                <label>
+                    <input class="form-control"  name="usernmae">
+                </label>
+            </div>
+            <div class="align-left">
+                <h3 class="text" style="color:azure">Password</h3>
+                <label>
+                    <input class="form-control" type="password" name="password" />
+                </label>
+            </div>
+            <div id="sign-margin">
+                <input id="signUp" type="submit" value="Sign In">
+            </div>
+        </form>
+
+        <span style="color: azure"></span>
+        <div id="footer">
+
+            <h5 id="left-f" style="color:azure ">
+                New to SnapSquad?
+                <a href="/signUp" class="pl-3" style="color:#FFE066">Sign up now »</a>
+            </h5>
+            <h5 id="forgot right-f" class="text">
+                <a href="/passwordReset" style="color:#FFE066">Forgot Password?</a>
+            </h5>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
