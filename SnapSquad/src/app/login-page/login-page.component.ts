@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {EventFeedPageComponent} from '../event-feed-page/event-feed-page.component'
 
 @Component({
   selector: 'app-login-page',

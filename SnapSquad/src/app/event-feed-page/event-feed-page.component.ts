@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {EventNavbarComponent} from '../event-navbar/event-navbar.component'
 
 @Component({
   selector: 'app-event-feed-page',
