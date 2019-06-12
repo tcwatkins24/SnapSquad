@@ -26,6 +26,7 @@ import { EventComponent } from './event/event.component'
     EventComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule
