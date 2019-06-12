@@ -8,7 +8,8 @@ const routes: Routes = [
   {path: "createEvent", component: CreateEventComponent},
   {path: "login", component: LoginPageComponent},
   {path: "eventFeedPage", component: EventFeedPageComponent},
-  {path: "", component: LoginPageComponent}
+  {path: "", component: LoginPageComponent},
+  {path: "eventFeedPage/createEvent", component: CreateEventComponent}
 ];
 
 @NgModule({
