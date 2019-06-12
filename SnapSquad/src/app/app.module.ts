@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,7 +10,8 @@ import { EventFeedPageComponent} from './event-feed-page/event-feed-page.compone
 import {EventNavbarComponent} from './event-navbar/event-navbar.component'
 import {EventDeckComponent} from './event-deck/event-deck.component';
 import { EventCardComponent } from './event-card/event-card.component'
-import { EventPageComponent } from './event-page/event-page.component'
+import { EventPageComponent } from './event-page/event-page.component';
+import { EventComponent } from './event/event.component'
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { EventPageComponent } from './event-page/event-page.component'
     EventNavbarComponent,
     EventDeckComponent,
     EventCardComponent,
-    EventPageComponent
+    EventPageComponent,
+    EventComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
