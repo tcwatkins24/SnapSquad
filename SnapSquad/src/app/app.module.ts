@@ -9,6 +9,7 @@ import { EventFeedPageComponent} from './event-feed-page/event-feed-page.compone
 import {EventNavbarComponent} from './event-navbar/event-navbar.component'
 import {EventDeckComponent} from './event-deck/event-deck.component';
 import { EventCardComponent } from './event-card/event-card.component'
+import { EventPageComponent } from './event-page/event-page.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EventCardComponent } from './event-card/event-card.component'
     EventFeedPageComponent,
     EventNavbarComponent,
     EventDeckComponent,
-    EventCardComponent
+    EventCardComponent,
+    EventPageComponent
   ],
   imports: [
     BrowserModule,
