@@ -7,7 +7,8 @@ import { CreateEventComponent } from './create-event/create-event.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { EventFeedPageComponent} from './event-feed-page/event-feed-page.component'
 import {EventNavbarComponent} from './event-navbar/event-navbar.component'
-import {EventDeckComponent} from './event-deck/event-deck.component'
+import {EventDeckComponent} from './event-deck/event-deck.component';
+import { EventPageComponent } from './event-page/event-page.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {EventDeckComponent} from './event-deck/event-deck.component'
     LoginPageComponent,
     EventFeedPageComponent,
     EventNavbarComponent,
-    EventDeckComponent
+    EventDeckComponent,
+    EventPageComponent
   ],
   imports: [
     BrowserModule,
