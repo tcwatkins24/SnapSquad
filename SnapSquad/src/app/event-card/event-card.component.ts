@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-event-card',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventCardComponent implements OnInit {
 
-  constructor() { }
+  @Input() name: string;
+  @Input() date: string;
+  @Input() summary: string;
+  @Input() pictureName: string;
+  @Input() reasonsToGo: string[];
+
+  constructor() { 
+  }
 
   ngOnInit() {
   }

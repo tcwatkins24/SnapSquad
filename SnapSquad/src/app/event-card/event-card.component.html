@@ -1,13 +1,12 @@
 <div class="card my-card m-5">
     <img src="assets/generic-bar.jpg" class="card-img-top">
     <div class="card-body">
-        <h5 class="card-title">Fun event!</h5>
+        <h5 class="card-title">{{ name }}</h5>
+        <h3 class="card-title">{{ date }}</h3>
         <div class ="card-text">
-            <ul>
-                <li>It's going to be fun</li>
-                <li>All your friends will be there</li>
-                <li>You should go</li>
-            </ul>
+            <div>
+                {{ summary }}
+            </div>
         </div>
     </div>
     <div class="row m-3 justify-content-center">

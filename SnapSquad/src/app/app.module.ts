@@ -11,7 +11,6 @@ import {EventNavbarComponent} from './event-navbar/event-navbar.component'
 import {EventDeckComponent} from './event-deck/event-deck.component';
 import { EventCardComponent } from './event-card/event-card.component'
 import { EventPageComponent } from './event-page/event-page.component';
-import { EventComponent } from './event/event.component'
 
 @NgModule({
   declarations: [
@@ -22,8 +21,7 @@ import { EventComponent } from './event/event.component'
     EventNavbarComponent,
     EventDeckComponent,
     EventCardComponent,
-    EventPageComponent,
-    EventComponent
+    EventPageComponent
   ],
   imports: [
     FormsModule,
