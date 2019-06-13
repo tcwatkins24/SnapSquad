@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {EventNavbarComponent} from '../event-navbar/event-navbar.component'
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-event-feed-page',
@@ -7,6 +6,13 @@ import {EventNavbarComponent} from '../event-navbar/event-navbar.component'
   styleUrls: ['./event-feed-page.component.scss']
 })
 export class EventFeedPageComponent implements OnInit {
+
+  @Input() deckState = "Upcoming";
+
+  changeDeckStatus(deck: string) {
+    console.log("event-feed-page-component: received signal changeDeck with parameter " + deck);
+    this.deckState = deck;
+  }
 
   constructor() { }
 

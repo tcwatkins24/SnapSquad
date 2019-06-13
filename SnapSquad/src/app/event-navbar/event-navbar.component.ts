@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'event-navbar',
@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class EventNavbarComponent implements OnInit {
+
+    @Output() changeDeck = new EventEmitter<string>();
+
+    emitChangeDeck(deckName: string) {
+        console.log("event-navbar-component: sent signal changeDeck with parameter " + deckName)
+        this.changeDeck.emit(deckName);
+    }
 
     constructor() { }
   

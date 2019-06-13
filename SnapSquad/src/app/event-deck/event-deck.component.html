@@ -1,5 +1,5 @@
 <div class="container-fluid my-fill">
-   <div class="row card-deck m-0 justify-content-center">
+   <div (eventSortByUpcoming)="testEventMatt()" class="row card-deck m-0 justify-content-center">
         <div *ngFor="let event of events">
             <app-event-card
                 class="col-4 horizontal-card"
@@ -9,6 +9,6 @@
                 [pictureName]="event.pictureName"
                 [reasonsToGo]="event.reasonsToGo"
             ></app-event-card>
-    </div>
+        </div>
    </div> 
 </div>
