@@ -12,10 +12,11 @@ export class CreateEventComponent implements OnInit {
   events = events;
 
    name: string;
-   date: string;
+   date: Date;
    summary: string;
    pictureName: string;
    reasonsToGo: string[];
+   dateCreated: Date = Date.now();
 
 
   constructor() { }
@@ -26,7 +27,8 @@ export class CreateEventComponent implements OnInit {
       date: this.date,
       summary: this.summary,
       pictureName: this.pictureName,
-      reasonsToGo: this.reasonsToGo
+      reasonsToGo: this.reasonsToGo,
+      dateCreated: this.dateCreated
     });
   }
 

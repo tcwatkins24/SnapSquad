@@ -20,7 +20,11 @@ export class EventFeedPageComponent implements OnInit {
     }); };
     if(deck === "New") {
       console.log("event-deck-component: sorted by new");
-    };
+      this.events.sort( (a, b) => {
+        if (a.dateCreated < b.dateCreated) return -1;
+        if (a.dateCreated > b.dateCreated) return 1;
+        return 0; 
+    }); };
     if(deck === "Going") {
       console.log("event-deck-component: filtered by going");
     };

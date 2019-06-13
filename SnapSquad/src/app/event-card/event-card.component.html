@@ -2,7 +2,7 @@
     <img src="assets/generic-bar.jpg" class="card-img-top">
     <div class="card-body">
         <h5 class="card-title">{{ name }}</h5>
-        <h3 class="card-title">{{ date }}</h3>
+        <h3 class="card-title">{{ date.toLocaleDateString("en-us", dateOptions) }}</h3>
         <div class ="card-text m-2">
             <div>
                 {{ summary }}

@@ -1,5 +1,4 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import { Component, OnInit, Input, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-event-card',
@@ -7,12 +6,14 @@ import {FormsModule} from '@angular/forms';
   styleUrls: ['./event-card.component.scss']
 })
 export class EventCardComponent implements OnInit {
+  dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
   @Input() name: string;
-  @Input() date: string;
+  @Input() date: Date;
   @Input() summary: string;
   @Input() pictureName: string;
   @Input() reasonsToGo: string[];
+  @Input() dateCreated: Date;
 
   constructor() { 
   }
