@@ -16,7 +16,7 @@ export class CreateEventComponent implements OnInit {
    summary: string;
    pictureName: string;
    reasonsToGo: string[];
-   dateCreated: Date = Date.now();
+   dateCreated: Date = new Date(Date.now());
 
 
   constructor() { }
