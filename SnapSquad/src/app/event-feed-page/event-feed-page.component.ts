@@ -8,7 +8,7 @@ import {eventsOriginal} from '../data';
   styleUrls: ['./event-feed-page.component.scss']
 })
 export class EventFeedPageComponent implements OnInit {
-  events = events;
+  events = eventsOriginal;
 
   changeDeck(deck: string) {
     console.log("event-feed-page-component: received signal changeDeck with parameter " + deck);

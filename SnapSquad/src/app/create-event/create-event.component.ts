@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {events} from '../data'
+import {eventsOriginal} from '../data'
 import {FormsModule} from '@angular/forms';
 import { stringify } from '@angular/compiler/src/util';
 import { SimpleWebDriverClient } from 'blocking-proxy/built/lib/simple_webdriver_client';
@@ -11,7 +11,7 @@ import { SimpleWebDriverClient } from 'blocking-proxy/built/lib/simple_webdriver
 })
 export class CreateEventComponent implements OnInit {
 
-  events = events;
+  eventsOriginal = eventsOriginal;
 
   placeholder = "It's really fun\nYou'd love it!\nI'm going!";
 
@@ -33,7 +33,7 @@ export class CreateEventComponent implements OnInit {
   addEvent() {
     var dateObject = new Date(this.date);
     this.id++;
-    events.push( {
+    eventsOriginal.push( {
       name: this.name,
       date: dateObject,
       summary: this.summary,
