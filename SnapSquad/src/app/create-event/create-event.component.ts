@@ -17,19 +17,23 @@ export class CreateEventComponent implements OnInit {
    pictureName: string;
    reasonsToGo: string[];
    dateCreated: Date = new Date(Date.now());
+   id: 2;
 
+   
 
   constructor() { }
 
   addEvent() {
     var dateObject = new Date(this.date);
+    this.id++;
     events.push( {
       name: this.name,
       date: dateObject,
       summary: this.summary,
       pictureName: this.pictureName,
       reasonsToGo: this.reasonsToGo,
-      dateCreated: this.dateCreated
+      dateCreated: this.dateCreated,
+      id: this.id
     });
   }
 
