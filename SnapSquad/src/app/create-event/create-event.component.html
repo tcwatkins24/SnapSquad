@@ -9,7 +9,7 @@
             <div class="row m-3 alert alert-primary">
                 All fields except "Other Details" are required.
             </div>
-            <form class="container rounded border">
+            <div class="container rounded border">
                     <div class="row form-group m-3">
                         <label>Name of Event*</label>
                         <input class="form-control" id="name" [(ngModel)]="name" placeholder="name"/>
@@ -40,7 +40,7 @@
                     <div class="form-group mt-5 m-3">
                         <button routerLink="/eventFeedPage" (click)="addEvent()" class="btn btn-primary">Submit Event</button>
                     </div>
-            </form>
+                </div>
         </div>
     </div>
 </div>
