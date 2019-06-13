@@ -7,27 +7,34 @@
     <div class="row m-4 border rounded my-fill-white">
         <div class="m-3 p-5">
             <div class="form-group">
+                <label>Name of Event</label>
+                <input class="form-control" id="name" [(ngModel)]="name" placeholder="name"/>
+            </div>
+            <div class="form-group">
                 <label>Summary</label>
-                <input class="form-control" placeholder="Short description"/>
+                <input class="form-control" placeholder="Short description"
+                    id="summary" [(ngModel)]="summary"/>
             </div>
             <div class="form-group">
                 <label>Date</label>
-                <input class="form-control myDateLabel" type="datetime-local">
+                <input class="form-control myDateLabel" type="datetime-local"
+                    id="date" [(ngModel)]="date"/>
             </div>
             <div class="form-group">
                 <label>Fun Picture</label>
-                <input type="file" class="form-control-file"/>
+                <input type="file" class="form-control-file" id="pictureName" [(ngModel)]="pictureName"/>
             </div>
             <div class="form-group">
                 <label>Reasons People Should Go</label>
-                <input class="form-control" placeholder="Be compelling!"/>
+                <input class="form-control" placeholder="Be compelling!" id="reasonsToGo" 
+                    [(ngModel)]="reasonsToGo"/>
             </div>
             <div class="form-group">
                 <label>Other Details</label>
                 <input class="form-control" placeholder="Longer description, maybe some links?"/>
             </div>
             <div class="form-group mt-5">
-                <button routerLink="/eventFeedPage" class="btn btn-primary">Submit Event</button>
+                <button routerLink="/eventFeedPage" (click)="addEvent()" class="btn btn-primary">Submit Event</button>
             </div>
         </div>
     </div>
