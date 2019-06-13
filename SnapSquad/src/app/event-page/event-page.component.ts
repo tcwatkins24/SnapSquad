@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {people} from '../data';
 import {events} from '../data'
+import {curEvent} from '../data';
 
 @Component({
   selector: 'app-event-page',
@@ -11,6 +12,7 @@ export class EventPageComponent implements OnInit {
 
   people = people;
   events = events;
+  curEvent = curEvent;
 
   @Input() first: string;
   @Input() last: string;

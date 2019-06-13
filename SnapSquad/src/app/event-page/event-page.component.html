@@ -1,21 +1,24 @@
-<div class="row">
-  <img class="col col-6" src="assets/image.jpg">
-  <div class="col ">
-    <div style="color: azure">Date: {{events[0].date}}</div>
-    <br>
-    <div style="color: azure">Location: Deep Ellum</div>
-    <br>
-    <div style="color: azure">Reasons to go:</div>
-    <br>
-    <div style="color: azure">Description: {{events[0].summary}}</div>
-  </div>
-  <div class="col">
-    <div class="text-muted text-center">Squad list</div>
-    <div *ngFor="let person of people" >
-      <ul class="list-group" >
-        <li class="list-group-item">{{person.first}}  {{person.last}}</li>
-      </ul>
+<div class="container">
+  <br>
+  <div class="row">
+    <img class="col col-6" src="assets/image.jpg">
+    <div class="col ">
+      <div style="color: azure">Date: {{curEvent[0].date}}</div>
+      <br>
+      <div style="color: azure">Location: Deep Ellum</div>
+      <br>
+      <div style="color: azure">Reasons to go:</div>
+      <br>
+      <div style="color: azure">Description: {{curEvent.summary}}</div>
     </div>
-    <button (click)="addMember()" class="btn btn-warning  btn-block">Join!</button>
   </div>
+  <br>
+  <span></span>
+  <div class=" text-center list-group-item border border-warning ">Squad List</div>
+  <div *ngFor="let person of people">
+    <ul class="list-group">
+      <li class="list-group-item">{{person.first}} {{person.last}}</li>
+    </ul>
+  </div>
+  <button (click)="addMember()" class="btn btn-warning  btn-block">Join!</button>
 </div>
