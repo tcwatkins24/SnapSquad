@@ -14,13 +14,13 @@
         </span>
     </div>
     <div class="col-4">
-        <button class="btn mx-3 border">
+        <button (click)="emitChangeDeck('Upcoming')" class="btn mx-3 border">
             Upcoming
         </button>
-        <button class="btn mx-3 border">
+        <button (click)="emitChangeDeck('New')" class="btn mx-3 border">
             New
         </button>
-        <button class="btn mx-3 border">
+        <button (click)="emitChangeDeck('Going')" class="btn mx-3 border">
             Going
         </button>
     </div>

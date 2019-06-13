@@ -8,6 +8,7 @@ import { events } from '../data';
 })
 export class EventDeckComponent implements OnInit {
   events = events;
+
   constructor() { }
 
   ngOnInit() {
