@@ -3,13 +3,20 @@
     <div class="card-body">
         <h5 class="card-title">{{ name }}</h5>
         <h3 class="card-title">{{ date }}</h3>
-        <div class ="card-text">
+        <div class ="card-text m-2">
             <div>
                 {{ summary }}
             </div>
+            <ul>
+                <div *ngFor="let reason of reasonsToGo">
+                    <li>
+                        {{ reason }}
+                    </li>
+                </div>
+            </ul>
         </div>
     </div>
-    <div class="row m-3 justify-content-center">
+    <div class="row m-2 justify-content-center">
         <button routerLink="/eventPage" class="btn btn-primary">
             More Info
         </button>
