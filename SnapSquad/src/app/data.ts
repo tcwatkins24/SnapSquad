@@ -23,3 +23,7 @@ export var events = [
 ];
 
 export var currentEventName = "Bar Tour";
+
+export var people = [
+    {first: "Joe", last: "Johnson"}
+];

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, Input } from '@angular/core';
+import { Component, OnInit, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-event-card',
