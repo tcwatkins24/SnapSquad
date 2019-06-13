@@ -1,12 +1,14 @@
 <div class="container-fluid my-fill">
-    <!-- <div *ngFor="let event of events" class="row card-deck m-0 justify-content-center"> !-->
-    <div class="row card-deck m-0 justify-content-center">
-        <app-event-card
-            [name]="event.name"
-            [date]="event.date"
-            [summary]="event.summary"
-            [pictureName]="event.pictureName"
-            [reasonsToGo]="event.reasonsToGo"
-        ></app-event-card>
+   <div class="row card-deck m-0 justify-content-center">
+        <div *ngFor="let event of events">
+            <app-event-card
+                class="col-4 horizontal-card"
+                [name]="event.name"
+                [date]="event.date"
+                [summary]="event.summary"
+                [pictureName]="event.pictureName"
+                [reasonsToGo]="event.reasonsToGo"
+            ></app-event-card>
     </div>
+   </div> 
 </div>

@@ -7,7 +7,7 @@ import { events } from '../data';
   styleUrls: ['./event-deck.component.scss']
 })
 export class EventDeckComponent implements OnInit {
-  event = events[0];
+  events = events;
   constructor() { }
 
   ngOnInit() {
