@@ -22,7 +22,7 @@ export class CreateEventComponent implements OnInit {
   constructor() { }
 
   addEvent() {
-    var dateObject = new Date(date.value);
+    var dateObject = new Date(this.date);
     events.push( {
       name: this.name,
       date: dateObject,
