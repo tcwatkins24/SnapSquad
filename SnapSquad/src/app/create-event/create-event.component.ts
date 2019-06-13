@@ -24,10 +24,11 @@ export class CreateEventComponent implements OnInit {
   constructor() { }
 
   addEvent() {
+    var dateObject = new Date(this.date);
     this.id++;
     events.push( {
       name: this.name,
-      date: this.date,
+      date: dateObject,
       summary: this.summary,
       pictureName: this.pictureName,
       reasonsToGo: this.reasonsToGo,
