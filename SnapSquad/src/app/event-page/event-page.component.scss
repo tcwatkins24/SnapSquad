@@ -6,3 +6,33 @@ span {
     border-top: 1px solid azure;
     
   }
+  
+  .event-image {
+    border-radius: 30px;
+    height: 300px;
+    width: auto;
+  }
+
+  .my-title {
+    text-align: center;
+  }
+
+  .no-background-color {
+    background-color: transparent;
+  }
+
+  .squad-list {
+    width: 50%;
+    color: black;
+    margin: auto;
+  }
+  
+  .people-list {
+    width: 50%;
+    margin: auto;
+  }
+
+  .join-button {
+    width: 50%;
+    margin: auto;
+  }
