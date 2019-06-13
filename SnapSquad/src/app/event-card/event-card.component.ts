@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, Input } from '@angular/core';
+import { Component, OnInit, Output, Input, Input } from '@angular/core';
 import { curEvent } from '../data';
 import {events} from '../data'
 
@@ -14,7 +14,9 @@ export class EventCardComponent implements OnInit {
   @Input() date: Date;
   @Input() summary: string;
   @Input() pictureName: string;
-  @Input() reasonsToGo: string[];
+  @Input() reason1ToGo: string;
+  @Input() reason2ToGo: string;
+  @Input() reason3ToGo: string;
   @Input() dateCreated: Date;
   @Input() id: number;
 
