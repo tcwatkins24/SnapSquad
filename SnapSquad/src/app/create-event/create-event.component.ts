@@ -43,7 +43,8 @@ export class CreateEventComponent implements OnInit {
       reason3Togo: this.reason3ToGo,
       moreDetails: this.moreDetails,
       dateCreated: this.dateCreated,
-      id: this.id
+      id: this.id,
+      going: false
     });
   }
 

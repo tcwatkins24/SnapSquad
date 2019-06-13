@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import {people} from '../data';
 import {events} from '../data'
 import {curEvent} from '../data';
-
+import {eventsOriginal} from '../data';
 @Component({
   selector: 'app-event-page',
   templateUrl: './event-page.component.html',
@@ -29,6 +29,12 @@ export class EventPageComponent implements OnInit {
       first: this.first,
       last: this.last
     });
+    
+    for (let eve of eventsOriginal) {
+      if(eve.id === curEvent[0].id) {
+        eve.going = true;
+      }
+    }
   }
 
 }

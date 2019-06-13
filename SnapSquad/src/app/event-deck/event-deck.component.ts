@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { events } from '../data';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'event-deck',
@@ -7,7 +7,7 @@ import { events } from '../data';
   styleUrls: ['./event-deck.component.scss']
 })
 export class EventDeckComponent implements OnInit {
-  events = events;
+  @Input() events
 
   constructor() { }
 
