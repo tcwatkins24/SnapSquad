@@ -1,7 +1,7 @@
 import { Component, OnInit, Output, Input } from '@angular/core';
 import { curEvent } from '../data';
 import {events} from '../data'
-
+import {eventsOriginal} from '../data';
 @Component({
   selector: 'app-event-card',
   templateUrl: './event-card.component.html',
@@ -25,7 +25,7 @@ export class EventCardComponent implements OnInit {
       console.log(curEvent);
       var temp = curEvent.pop();
       var newCurrentEvent;
-      for(let eve of events) {
+      for(let eve of eventsOriginal) {
         if (eve.id === id) {newCurrentEvent = eve;}
       }
       curEvent.push(newCurrentEvent);

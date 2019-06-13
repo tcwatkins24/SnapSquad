@@ -33,7 +33,8 @@ export class CreateEventComponent implements OnInit {
       pictureName: this.pictureName,
       reasonsToGo: this.reasonsToGo,
       dateCreated: this.dateCreated,
-      id: this.id
+      id: this.id,
+      going: false
     });
   }
 
