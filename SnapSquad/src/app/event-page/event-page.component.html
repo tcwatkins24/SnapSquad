@@ -1,26 +1,43 @@
-<div class="container" style="color: white;">
-  <br>
-  <div class="row my-4 pb-4">
-    <img class="col-6 event-image" src="assets/image.jpg">
-    <div class="col-6">
-      <div class="row my-3"><h2>{{curEvent[0].name}}</h2></div>
-      <div class="row my-3">Date: {{curEvent[0].date}}</div>
-      <div class="row my-3">Location: Deep Ellum</div>
-      <div class="row my-3">Reasons to go: {{curEvent[0].reason1ToGo}}, {{curEvent[0].reason2ToGo}}, {{curEvent[0].reason3ToGo}}</div>
-      <div class="row my-3">Description: {{curEvent[0].summary}}</div>
-    </div>
-  </div>
-  <span></span>
-  <div class="row justify-content-center">
-    <div class="m-4 pt-4 squad-list">
-      <div class="col-12">
-        <div class="mb-3 text-center list-group-item border border-warning no-background-color"><h2>Squad List</h2></div>
-        <div *ngFor="let person of people" class="no-background-color justify-content-center people-list">
-          <ul class="list-group">
-            <li class="list-group-item  text-center"><h3>{{person.first}} {{person.last}}</h3></li>
-          </ul>
+<div class="container">
+  <div class="container rounded border m-5" style="color: black; background-color: white;">
+    <div class="row my-3 pb-4 description-box">
+      <img class="col-6 event-image" src="assets/image.jpg">
+      <div class="col-6">
+        <div class="row my-3"><h1>{{curEvent[0].name}}</h1></div>
+        <div class="row my-3">
+          <h5>Date</h5>
+          <br>
+          {{curEvent[0].date}}
         </div>
-        <button (click)="addMember()" class="btn btn-warning btn-block join-button">Join!</button>
+        <div class="row my-3">
+          <h5>Location</h5>
+          <br>
+          Los Angeles
+        </div>
+        <div class="row my-3">
+          <h5>Reasons To Go</h5>
+          <br>
+          {{curEvent[0].reason1ToGo}}, {{curEvent[0].reason2ToGo}}, {{curEvent[0].reason3ToGo}}
+        </div>
+        <div class="row my-3">
+          <h5>Description</h5>
+          <br>
+          {{curEvent[0].summary}}
+        </div>
+      </div>
+    </div>
+    <span></span>
+    <div class="row justify-content-center">
+      <div class="m-3 pt-2 squad-list">
+        <div class="col-12">
+          <div class="mb-3 text-center"><h2>Squad List</h2></div>
+            <button (click)="addMember()" class="btn btn-warning btn-block join-button"><h2>Join!</h2></button>
+            <div *ngFor="let person of people" class="no-background-color justify-content-center people-list">
+              <ul class="list-group">
+                <li class="list-group-item  text-center"><h5>{{person.first}} {{person.last}}</h5></li>
+              </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
