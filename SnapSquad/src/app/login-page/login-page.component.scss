@@ -1,4 +1,6 @@
-
+.my-background {
+  background-color: white;
+}
 
 #center-box{
  text-align: center;
@@ -18,10 +20,6 @@ font-size: 16px;
   width: 250px;
   height: 30px;
   border-radius: 4px;
-   
-    border: 1px solid #004BA8;
-          color: #004BA8;
-
 }
 
 
@@ -74,7 +72,7 @@ span {
   margin: 15px auto;
   margin-left: 30px;
   margin-right: 30px;
-  border-top: 1px solid azure;
+  border-top: 1px solid black;
 }
 
 #forgot{
@@ -93,13 +91,11 @@ span {
              width: 250px;
              height: 30px;
              border-radius: 4px;
-             background-color: azure;
              border: 1px solid #41AFA8;
              margin-bottom:10px;
 }
 
 #stack a{
-color: #41AFA8;
 
   text-decoration:none;
 }
@@ -108,13 +104,11 @@ color: #41AFA8;
   font-size: 16px;
   width: 250px;
   border-radius: 4px;
-  background-color: #41AFA8;
   border: 2px solid #41AFA8;
 
 
 
   height: 30px;
-          color: #DFF2F1;
 
 }
 
@@ -165,7 +159,6 @@ font-size: 16px;
   width: 250px;
   height: 30px;
   border-radius: 4px;
-   background-color: #DFF2F1;
     border: 1px solid #41AFA8;
           color: #41AFA8;
 
@@ -181,7 +174,6 @@ font-size: 16px;
   width: 250px;
   height: 30px;
   border-radius: 4px;
-   background-color: #DFF2F1;
     border: 1px solid #41AFA8;
           color: #41AFA8;
 }
