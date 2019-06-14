@@ -1,6 +1,6 @@
 export var events = [
     {
-        name: "Bar Tour", date: new Date('June 2, 2019 08:24:00'),
+        name: "Bar Tour", date: new Date('June 21, 2019 18:24:00'),
         summary: "Going to Deep Ellum Brewing!",
         pictureName: "assets/generic-bar.jpg",
         reason1ToGo: "Fun",
@@ -11,7 +11,7 @@ export var events = [
         going: true
     },
     {
-        name: "Bowling", date: new Date('June 3, 2019 08:24:00'),
+        name: "Bowling", date: new Date('June 20, 2019 19:24:00'),
         summary: "Come bowl and meet your buddies in Talent Dev!",
         pictureName: "assets/bowling.jpg",
         reason1ToGo: "We'll knock down some pins (hopefully)",
@@ -22,7 +22,7 @@ export var events = [
         going: false
     },
     {
-        name: "Slow Cooking Class", date: new Date('June 4, 2019 08:24:00'),
+        name: "Slow Cooking Class", date: new Date('June 15, 2019 17:30:00'),
         summary: "Learning slow cooking with master chef Gordon Ramsey!",
         pictureName: "assets/slow-cooking.jpg",
         reason1ToGo: "Meal prep delicious feasts",
@@ -33,7 +33,7 @@ export var events = [
         going: false
     },
     {
-        name: "Bowling with the Hair Guy", date: new Date('June 7, 2019 08:24:00'),
+        name: "Bowling with the Hair Guy", date: new Date('June 14, 2019 14:24:00'),
         summary: "Good luck against this 'fro",
         pictureName: "assets/two-picks.gif",
         reason1ToGo: "Legendary time",
@@ -44,7 +44,7 @@ export var events = [
         going: false
     },
     {
-        name: "Chess with the Pixar Guy", date: new Date('June 6, 2019 08:24:00'),
+        name: "Chess with the Pixar Guy", date: new Date('June 17, 2019 08:24:00'),
         summary: "Beat this guy who plays himself",
         pictureName: "assets/pixar-chess.gif",
         reason1ToGo: "Nice guy",
@@ -55,7 +55,7 @@ export var events = [
         going: false
     },
     {
-        name: "Jenga Tournament", date: new Date('June 5, 2019 08:24:00'),
+        name: "Jenga Tournament", date: new Date('June 19, 2019 19:24:00'),
         summary: "Who's the best at Jenga?",
         pictureName: "assets/jenga.jpg",
         reason1ToGo: "Big time fun",
@@ -69,7 +69,7 @@ export var events = [
 
 export var eventsOriginal = [
     {
-        name: "Bar Tour", date: new Date('June 2, 2019 08:24:00'),
+        name: "Bar Tour", date: new Date('June 21, 2019 18:24:00'),
         summary: "Going to Deep Ellum Brewing!",
         pictureName: "assets/generic-bar.jpg",
         reason1ToGo: "Fun",
@@ -80,7 +80,7 @@ export var eventsOriginal = [
         going: true
     },
     {
-        name: "Bowling", date: new Date('June 3, 2019 08:24:00'),
+        name: "Bowling", date: new Date('June 20, 2019 19:24:00'),
         summary: "Come bowl and meet your buddies in Talent Dev!",
         pictureName: "assets/bowling.jpg",
         reason1ToGo: "We'll knock down some pins (hopefully)",
@@ -91,7 +91,7 @@ export var eventsOriginal = [
         going: false
     },
     {
-        name: "Bowling with the Hair Guy", date: new Date('June 7, 2019 08:24:00'),
+        name: "Bowling with the Hair Guy", date: new Date('June 14, 2019 14:24:00'),
         summary: "Good luck against this 'fro",
         pictureName: "assets/two-picks.gif",
         reason1ToGo: "Legendary time",
@@ -102,7 +102,7 @@ export var eventsOriginal = [
         going: false
     },
     {
-        name: "Slow Cooking Class", date: new Date('June 4, 2019 08:24:00'),
+        name: "Slow Cooking Class", date: new Date('June 15, 2019 17:30:00'),
         summary: "Learning slow cooking with master chef Gordon Ramsey!",
         pictureName: "assets/slow-cooking.jpg",
         reason1ToGo: "Meal prep delicious feasts",
@@ -113,7 +113,7 @@ export var eventsOriginal = [
         going: false
     },
     {
-        name: "Chess with the Pixar Guy", date: new Date('June 6, 2019 08:24:00'),
+        name: "Chess with the Pixar Guy", date: new Date('June 17, 2019 08:24:00'),
         summary: "Beat this guy who plays himself",
         pictureName: "assets/pixar-chess.gif",
         reason1ToGo: "Nice guy",
@@ -124,7 +124,7 @@ export var eventsOriginal = [
         going: false
     },
     {
-        name: "Jenga Tournament", date: new Date('June 5, 2019 08:24:00'),
+        name: "Jenga Tournament", date: new Date('June 19, 2019 19:24:00'),
         summary: "Who's the best at Jenga?",
         pictureName: "assets/jenga.jpg",
         reason1ToGo: "Big time fun",
