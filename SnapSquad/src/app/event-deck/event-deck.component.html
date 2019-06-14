@@ -1,5 +1,5 @@
 <div class="container-fluid mt-5 pt-5">
-   <div (eventSortByUpcoming)="testEventMatt()" class="row card-deck m-0 justify-content-center">
+   <div class="row card-deck m-0 justify-content-center">
         <div *ngFor="let event of eventsOriginal">
             <app-event-card
                 class="col-4 horizontal-card"
@@ -7,7 +7,9 @@
                 [date]="event.date"
                 [summary]="event.summary"
                 [pictureName]="event.pictureName"
-                [reasonsToGo]="event.reasonsToGo"
+                [reason1ToGo]="event.reason1ToGo"
+                [reason2ToGo]="event.reason2ToGo"
+                [reason3ToGo]="event.reason3ToGo"
                 [id]="event.id"
             ></app-event-card>
         </div>
