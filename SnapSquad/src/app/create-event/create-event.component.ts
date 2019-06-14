@@ -39,7 +39,7 @@ export class CreateEventComponent implements OnInit {
       name: this.name,
       date: dateObject,
       summary: this.summary,
-      pictureName: this.pictureName,
+      pictureName: "assets/" + this.pictureName,
       reason1ToGo: this.reason1ToGo,
       reason2ToGo: this.reason2ToGo,
       reason3ToGo: this.reason3ToGo,
