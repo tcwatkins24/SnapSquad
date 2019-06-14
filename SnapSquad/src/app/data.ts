@@ -6,7 +6,7 @@ export var events = [
         reason1ToGo: "Fun",
         reason2ToGo: "Cheap",
         reason3ToGo: "Good time",
-        dateCreated: new Date('June 5, 2019 08:24:00'),
+        dateCreated: new Date('June 2, 2019 08:24:00'),
         id: 0,
         going: true
     },
@@ -28,7 +28,7 @@ export var events = [
         reason1ToGo: "Meal prep delicious feasts",
         reason2ToGo: "Cook things all day!",
         reason3ToGo: "Have some fun",
-        dateCreated: new Date('June 1, 2019 08:24:00'),
+        dateCreated: new Date('June 15, 2019 08:24:00'),
         id: 2,
         going: false
     },
@@ -39,7 +39,7 @@ export var events = [
         reason1ToGo: "Legendary time",
         reason2ToGo: "Never misses",
         reason3ToGo: "Big afro",
-        dateCreated: new Date('May 5, 2019 08:24:00'),
+        dateCreated: new Date('June 10, 2019 08:24:00'),
         id: 3,
         going: false
     },
@@ -50,7 +50,7 @@ export var events = [
         reason1ToGo: "Nice guy",
         reason2ToGo: "Real old",
         reason3ToGo: "Have some fun",
-        dateCreated: new Date('June 1, 2019 08:24:00'),
+        dateCreated: new Date('June 10, 2019 08:24:00'),
         id: 4,
         going: false
     },
@@ -97,7 +97,7 @@ export var eventsOriginal = [
         reason1ToGo: "Legendary time",
         reason2ToGo: "Never misses",
         reason3ToGo: "Big afro",
-        dateCreated: new Date('May 5, 2019 08:24:00'),
+        dateCreated: new Date('June 10, 2019 08:24:00'),
         id: 3,
         going: false
     },
@@ -108,7 +108,7 @@ export var eventsOriginal = [
         reason1ToGo: "Meal prep delicious feasts",
         reason2ToGo: "Cook things all day!",
         reason3ToGo: "Have some fun",
-        dateCreated: new Date('June 1, 2019 08:24:00'),
+        dateCreated: new Date('June 15, 2019 08:24:00'),
         id: 2,
         going: false
     },
@@ -119,7 +119,7 @@ export var eventsOriginal = [
         reason1ToGo: "Nice guy",
         reason2ToGo: "Real old",
         reason3ToGo: "Have some fun",
-        dateCreated: new Date('June 1, 2019 08:24:00'),
+        dateCreated: new Date('June 10, 2019 08:24:00'),
         id: 4,
         going: false
     },
@@ -144,7 +144,7 @@ export var curEvent = [
         reason1ToGo: "Fun",
         reason2ToGo: "Cheap",
         reason3ToGo: "Good time",
-        dateCreated: new Date('June 5, 2019 08:24:00'),
+        dateCreated: new Date('June 2, 2019 08:24:00'),
         id: 0,
         going: false
     }

@@ -39,7 +39,9 @@ export class EventFeedPageComponent implements OnInit {
     
   }
 
-  constructor() { }
+  constructor() {
+    this.changeDeck("Upcoming");
+   }
 
   ngOnInit() {
   }
