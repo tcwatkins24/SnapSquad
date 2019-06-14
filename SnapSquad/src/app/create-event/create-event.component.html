@@ -37,7 +37,7 @@
                     </div>
                     <div class="form-group m-3">
                         <label>Other Details</label>
-                        <textarea rows=2 class="form-control" placeholder="Longer description, maybe some links?"></textarea>
+                        <textarea rows=2 class="form-control" [(ngModel)]="moreDetails" placeholder="Longer description, maybe some links?"></textarea>
                     </div>
                     <div class="form-group mt-4 m-3">
                         <button routerLink="/eventFeedPage" (click)="addEvent()" class="btn btn-primary">Submit Event</button>

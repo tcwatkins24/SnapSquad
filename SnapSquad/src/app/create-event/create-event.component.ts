@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {eventsOriginal} from '../data'
+import {events, eventsOriginal} from '../data'
+import {counter} from '../data';
 import {FormsModule} from '@angular/forms';
 import { stringify } from '@angular/compiler/src/util';
 import { SimpleWebDriverClient } from 'blocking-proxy/built/lib/simple_webdriver_client';
@@ -11,9 +12,8 @@ import { SimpleWebDriverClient } from 'blocking-proxy/built/lib/simple_webdriver
 })
 export class CreateEventComponent implements OnInit {
 
-  eventsOriginal = eventsOriginal;
-
-  placeholder = "It's really fun\nYou'd love it!\nI'm going!";
+  events = events;
+  
 
    name: string;
    date: Date;
@@ -24,7 +24,7 @@ export class CreateEventComponent implements OnInit {
    reason3ToGo: string;
    moreDetails: string;
    dateCreated: Date = new Date(Date.now());
-   id: 2;
+   id: number;
 
    
 
@@ -32,7 +32,9 @@ export class CreateEventComponent implements OnInit {
 
   addEvent() {
     var dateObject = new Date(this.date);
-    this.id++;
+    var newId = counter.pop();
+    newId.count += 1;
+    console.log(this.id);
     eventsOriginal.push( {
       name: this.name,
       date: dateObject,
@@ -42,9 +44,12 @@ export class CreateEventComponent implements OnInit {
       reason2ToGo: this.reason2ToGo,
       reason3ToGo: this.reason3ToGo,
       dateCreated: this.dateCreated,
-      id: this.id,
+      id: newId.count,
       going: false
+      
     });
+    counter.push(newId);
+    console.log("pushed new event");
   }
 
   ngOnInit() {

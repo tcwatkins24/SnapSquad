@@ -32,9 +32,9 @@
         <div class="col-12">
           <div class="mb-3 text-center"><h2>Squad List</h2></div>
             <button (click)="addMember()" class="btn btn-warning btn-block join-button"><h2>Join!</h2></button>
-            <div *ngFor="let person of people" class="no-background-color justify-content-center people-list">
+            <div *ngFor="let person of people[curEvent[0].id]" class="no-background-color justify-content-center people-list">
               <ul class="list-group">
-                <li class="list-group-item  text-center"><h5>{{person.first}} {{person.last}}</h5></li>
+                <li class="list-group-item  text-center" ><h5 >{{person.first}} {{person.last}}</h5></li>
               </ul>
           </div>
         </div>

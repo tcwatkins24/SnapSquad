@@ -67,6 +67,8 @@ export var events = [
     }
 ];
 
+export var counter = [{count: 2}];
+
 export var eventsOriginal = [
     {
         name: "Bar Tour", date: new Date('June 21, 2019 18:24:00'),
@@ -153,5 +155,14 @@ export var curEvent = [
 export var currentEventName = "Bar Tour";
 
 export var people = [
-    {first: "Joe", last: "Johnson"}
+
+    [{first: "Joe", last: "Johnson"}],
+    [{first: "John", last: "Doe"}],
+    [{first: "Mary", last: "Me"}],
+    [{first: "Hugh", last: "Jabrain"}],
+    [{first: "Lilly", last:"Pad"}],
+    [{first: "Gary", last: "Oldman"}],
+    [{first: "Todd", last:"Chavez"}]
 ];
+
+export var peopleDis = [];
