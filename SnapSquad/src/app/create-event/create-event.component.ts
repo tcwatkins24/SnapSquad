@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {events} from '../data'
+import {events, eventsOriginal} from '../data'
 import {FormsModule} from '@angular/forms';
+import {counter} from '../data';
 
 @Component({
   selector: 'app-create-event',
@@ -10,6 +11,7 @@ import {FormsModule} from '@angular/forms';
 export class CreateEventComponent implements OnInit {
 
   events = events;
+  
 
    name: string;
    date: Date;
@@ -17,7 +19,7 @@ export class CreateEventComponent implements OnInit {
    pictureName: string;
    reasonsToGo: string[];
    dateCreated: Date = new Date(Date.now());
-   id: 2;
+   id: number;
 
    
 
@@ -25,17 +27,20 @@ export class CreateEventComponent implements OnInit {
 
   addEvent() {
     var dateObject = new Date(this.date);
-    this.id++;
-    events.push( {
+    var newId = counter.pop();
+    newId.count += 1;
+    console.log(this.id);
+    eventsOriginal.push( {
       name: this.name,
       date: dateObject,
       summary: this.summary,
       pictureName: this.pictureName,
       reasonsToGo: this.reasonsToGo,
       dateCreated: this.dateCreated,
-      id: this.id,
+      id: newId.count,
       going: false
     });
+    counter.push(newId);
   }
 
   ngOnInit() {

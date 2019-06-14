@@ -28,6 +28,8 @@ export var events = [
     }
 ];
 
+export var counter = [{count: 2}];
+
 export var eventsOriginal = [
     {
         name: "Bar Tour", date: new Date('June 2, 2019 08:24:00'),
