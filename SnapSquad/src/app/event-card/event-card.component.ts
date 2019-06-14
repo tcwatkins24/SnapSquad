@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, Input, Input } from '@angular/core';
+import { Component, OnInit, Output, Input } from '@angular/core';
 import { curEvent } from '../data';
 import {events} from '../data'
 import {eventsOriginal} from '../data';
